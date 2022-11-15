@@ -6,4 +6,6 @@ What is your favorite color
 
 Blue
 
-and black
+red
+
+orange
