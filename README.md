@@ -9,5 +9,3 @@ Blue
 red
 
 orange
-
-Teal
