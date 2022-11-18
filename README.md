@@ -7,3 +7,5 @@ I've known you since we where 9 or 10
 What is the air speed velocity of a swallow?
 
 European or African?
+
+I don't know that!
