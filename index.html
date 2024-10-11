@@ -1,231 +1,30 @@
----
-layout: default  # This tells Jekyll to use the default layout from your theme
-title: "My Page Title"  # Change this to your page title
----
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CEDS Collaborative Exchange</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            z-index: 10;
-        }
-        header nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            display: inline-block;
-            transition: background 0.3s ease;
-        }
-        header nav a:hover {
-            background: #444;
-        }
-        .hero {
-            background: url('https://via.placeholder.com/1200x600') no-repeat center center/cover;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-            text-align: center;
-            flex-direction: column;
-        }
-        .hero h1 {
-            font-size: 4rem;
-            margin-bottom: 1rem;
-        }
-        .hero p {
-            font-size: 1.5rem;
-            margin-bottom: 2rem;
-        }
-        .btn {
-            padding: 1rem 2rem;
-            background: #007bff;
-            color: #fff;
-            border: none;
-            text-decoration: none;
-            font-size: 1.2rem;
-            transition: background 0.3s ease;
-        }
-        .btn:hover {
-            background: #0056b3;
-        }
-        section {
-            padding: 4rem 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .project-section {
-            margin: 3rem 0;
-            display: flex;
-            width: 90%;
-            justify-content: space-between;
-            opacity: 0;
-            transform: translateY(50px);
-            transition: all 0.6s ease-in-out;
-        }
-        .project-section.show {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .project-image {
-            width: 45%;
-        }
-        .project-image img {
-            max-width: 100%;
-            border-radius: 8px;
-        }
-        .project-details {
-            width: 45%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .project-details h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-        }
-        .project-details ul {
-            list-style: disc;
-            margin-left: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-        .project-details ul li {
-            margin-bottom: 0.5rem;
-            font-size: 1.2rem;
-        }
-        .project-details .btn {
-            font-size: 1.2rem;
-            padding: 1rem 2rem;
-            background: #28a745;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 3rem;
-        }
-        footer a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>My GitHub Pages Site</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-
-    <!-- Header with navigation -->
     <header>
+        <h1>Welcome to My GitHub Pages Site</h1>
         <nav>
-            <a href="#hero">Home</a>
-            <a href="#generate">Generate</a>
-            <a href="#ciid-reports">CIID Reports</a>
-            <a href="#aem-reports">AEM Center Reports</a>
-            <a href="#contact">Contact</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="repo.html">Repositories</a></li>
+            </ul>
         </nav>
     </header>
-
-    <!-- Hero Banner -->
-    <section class="hero" id="hero">
-        <h1>Welcome to CEDS Collaborative Exchange</h1>
-        <p>Your source for open-source tools and reports using CEDS and Generate data</p>
-        <a href="#generate" class="btn">Explore Generate</a>
-    </section>
-
-    <!-- Generate Section -->
-    <section class="project-section" id="generate">
-        <div class="project-image">
-            <img src="https://via.placeholder.com/600x400" alt="Generate Tool">
-        </div>
-        <div class="project-details">
-            <h2>Generate Software Tool</h2>
-            <ul>
-                <li>Streamlines IDEA data submission and reporting.</li>
-                <li>Built with CEDS standards to improve data quality.</li>
-                <li>Integrates smoothly into any state education agency workflow.</li>
-            </ul>
-            <a href="https://center-for-the-integration-of-id.gitbook.io/generate-documentation" class="btn" target="_blank">View Documentation</a>
-        </div>
-    </section>
-
-    <!-- CIID Reports Section -->
-    <section class="project-section" id="ciid-reports">
-        <div class="project-details">
-            <h2>CIID PowerBI Reports</h2>
-            <ul>
-                <li>Library of reports developed from Generate data.</li>
-                <li>Features reports like Significant Disproportionality.</li>
-                <li>Customizable PowerBI templates for state education agencies.</li>
-            </ul>
-            <a href="https://center-for-the-integration-of-id.gitbook.io/ciid-reports" class="btn" target="_blank">View Documentation</a>
-        </div>
-        <div class="project-image">
-            <img src="https://via.placeholder.com/600x400" alt="CIID Reports">
-        </div>
-    </section>
-
-    <!-- AEM Center Reports Section -->
-    <section class="project-section" id="aem-reports">
-        <div class="project-image">
-            <img src="https://via.placeholder.com/600x400" alt="AEM Reports">
-        </div>
-        <div class="project-details">
-            <h2>AEM Center Reports</h2>
-            <ul>
-                <li>Accessibility-focused reports using CEDS and Generate data.</li>
-                <li>Customized PowerBI reports for accessibility needs.</li>
-                <li>Improves access to high-quality, actionable education data.</li>
-            </ul>
-            <a href="https://github.com/CEDS-Collaborative-Exchange/AEM-Center-Reports" class="btn" target="_blank">View Documentation</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer id="contact">
-        <p>For questions or support, visit our <a href="https://github.com/CEDS-Collaborative-Exchange" target="_blank">GitHub repository</a> or contact us at <a href="mailto:support@yourdomain.org">support@yourdomain.org</a>.</p>
-        <p>&copy; 2024 CEDS Collaborative Exchange. All rights reserved.</p>
+    <main>
+        <h2>Main Content Section</h2>
+        <p>This is the main page content.</p>
+    </main>
+    <footer>
+        <p>© 2024 My GitHub Pages Site</p>
     </footer>
-
-    <script>
-        // Detect when sections are in view and add the "show" class to animate
-        const sections = document.querySelectorAll('.project-section');
-
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('show');
-                }
-            });
-        }, { threshold: 0.5 });
-
-        sections.forEach(section => {
-            observer.observe(section);
-        });
-    </script>
-
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
