@@ -1,2 +1,32 @@
-theme: jekyll-theme-minimal # You can change this to your preferred theme
+# Site settings
+title: My Jekyll Site
+description: A simple Jekyll site powered by Minima theme.
+url: "https://yourusername.github.io/your-repo" # Your GitHub Pages URL
+baseurl: "" # Leave empty if your site is at the root level
 
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Author settings
+author:
+  name: Your Name
+  email: your-email@example.com
+
+# Social media links (optional)
+social:
+  twitter: yourtwitterhandle
+  github: yourgithubusername
+
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+# Plugins (if needed)
+plugins:
+  - jekyll-feed
+
+# Other settings
+sass:
+  style: compressed # Use compressed style for CSS output
