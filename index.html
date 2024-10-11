@@ -65,28 +65,56 @@
         .btn:hover {
             background: #0056b3;
         }
-        section.features {
-            padding: 3rem 1rem;
-            text-align: center;
+        section {
+            padding: 4rem 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
         }
-        section.features h2 {
-            margin-bottom: 2rem;
-            font-size: 2.5rem;
+        .project-section {
+            margin: 3rem 0;
+            display: flex;
+            width: 90%;
+            justify-content: space-between;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.6s ease-in-out;
         }
-        .features .feature-box {
-            display: inline-block;
-            width: 30%;
-            margin: 1%;
-            padding: 2rem;
-            background: #f4f4f4;
+        .project-section.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .project-image {
+            width: 45%;
+        }
+        .project-image img {
+            max-width: 100%;
             border-radius: 8px;
-            transition: transform 0.3s ease;
         }
-        .features .feature-box:hover {
-            transform: scale(1.05);
+        .project-details {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
-        .features .feature-box h3 {
-            margin-bottom: 1rem;
+        .project-details h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .project-details ul {
+            list-style: disc;
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .project-details ul li {
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+        .project-details .btn {
+            font-size: 1.2rem;
+            padding: 1rem 2rem;
+            background: #28a745;
         }
         footer {
             background: #333;
@@ -101,10 +129,6 @@
         }
         footer a:hover {
             text-decoration: underline;
-        }
-        /* Smooth scroll */
-        html {
-            scroll-behavior: smooth;
         }
     </style>
 </head>
@@ -128,78 +152,76 @@
         <a href="#generate" class="btn">Explore Generate</a>
     </section>
 
-    <!-- Features Section -->
-    <section class="features" id="generate">
-        <h2>Generate Software Tool</h2>
-        <div class="feature-box">
-            <h3>What is Generate?</h3>
-            <p>Generate is a powerful tool that helps state education agencies streamline IDEA data submission and reporting processes using CEDS standards.</p>
+    <!-- Generate Section -->
+    <section class="project-section" id="generate">
+        <div class="project-image">
+            <img src="https://via.placeholder.com/600x400" alt="Generate Tool">
         </div>
-        <div class="feature-box">
-            <h3>How to Use Generate</h3>
-            <p>Learn how to install and implement Generate in your workflows, and explore the benefits of improved data quality and reporting.</p>
-        </div>
-        <div class="feature-box">
-            <h3>Documentation</h3>
-            <p>Find full documentation for Generate on our <a href="https://github.com/yourusername/generate" target="_blank">GitHub repository</a>.</p>
+        <div class="project-details">
+            <h2>Generate Software Tool</h2>
+            <ul>
+                <li>Streamlines IDEA data submission and reporting.</li>
+                <li>Built with CEDS standards to improve data quality.</li>
+                <li>Integrates smoothly into any state education agency workflow.</li>
+            </ul>
+            <a href="https://center-for-the-integration-of-id.gitbook.io/generate-documentation" class="btn" target="_blank">View Documentation</a>
         </div>
     </section>
 
     <!-- CIID Reports Section -->
-    <section class="features" id="ciid-reports">
-        <h2>CIID Reports</h2>
-        <div class="feature-box">
-            <h3>PowerBI Reports Library</h3>
-            <p>Explore a library of PowerBI reports developed from Generate data, tailored for state education agency reporting needs.</p>
+    <section class="project-section" id="ciid-reports">
+        <div class="project-details">
+            <h2>CIID PowerBI Reports</h2>
+            <ul>
+                <li>Library of reports developed from Generate data.</li>
+                <li>Features reports like Significant Disproportionality.</li>
+                <li>Customizable PowerBI templates for state education agencies.</li>
+            </ul>
+            <a href="https://center-for-the-integration-of-id.gitbook.io/ciid-reports" class="btn" target="_blank">View Documentation</a>
         </div>
-        <div class="feature-box">
-            <h3>Access CIID Reports</h3>
-            <p>Browse through reports on topics like Significant Disproportionality, all developed using data from Generate.</p>
-        </div>
-        <div class="feature-box">
-            <h3>Documentation</h3>
-            <p>Check out the <a href="https://github.com/yourusername/ciid-reports" target="_blank">CIID Reports GitHub repository</a> for more details and access to the reports.</p>
+        <div class="project-image">
+            <img src="https://via.placeholder.com/600x400" alt="CIID Reports">
         </div>
     </section>
 
     <!-- AEM Center Reports Section -->
-    <section class="features" id="aem-reports">
-        <h2>AEM Center Reports</h2>
-        <div class="feature-box">
-            <h3>PowerBI Reports Library</h3>
-            <p>Access a collection of reports developed for the AEM Center, offering insights into accessibility and education data.</p>
+    <section class="project-section" id="aem-reports">
+        <div class="project-image">
+            <img src="https://via.placeholder.com/600x400" alt="AEM Reports">
         </div>
-        <div class="feature-box">
-            <h3>View AEM Reports</h3>
-            <p>Explore customized reports that address accessibility needs using CEDS and Generate data.</p>
-        </div>
-        <div class="feature-box">
-            <h3>Documentation</h3>
-            <p>Find documentation and more information in the <a href="https://github.com/yourusername/aem-reports" target="_blank">AEM Center Reports GitHub repository</a>.</p>
+        <div class="project-details">
+            <h2>AEM Center Reports</h2>
+            <ul>
+                <li>Accessibility-focused reports using CEDS and Generate data.</li>
+                <li>Customized PowerBI reports for accessibility needs.</li>
+                <li>Improves access to high-quality, actionable education data.</li>
+            </ul>
+            <a href="https://github.com/CEDS-Collaborative-Exchange/AEM-Center-Reports" class="btn" target="_blank">View Documentation</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer id="contact">
-        <p>For questions or support, visit our <a href="https://github.com/yourusername/ceds-collaborative-exchange" target="_blank">GitHub repository</a> or contact us at <a href="mailto:support@yourdomain.org">support@yourdomain.org</a>.</p>
+        <p>For questions or support, visit our <a href="https://github.com/CEDS-Collaborative-Exchange" target="_blank">GitHub repository</a> or contact us at <a href="mailto:support@yourdomain.org">support@yourdomain.org</a>.</p>
         <p>&copy; 2024 CEDS Collaborative Exchange. All rights reserved.</p>
     </footer>
 
     <script>
-        // Add scroll behavior for smooth navigation
-        document.querySelectorAll('header nav a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+        // Detect when sections are in view and add the "show" class to animate
+        const sections = document.querySelectorAll('.project-section');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
             });
+        }, { threshold: 0.5 });
+
+        sections.forEach(section => {
+            observer.observe(section);
         });
     </script>
-
-</body>
-</html>
-
 
 </body>
 </html>
