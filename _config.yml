@@ -1,3 +1,4 @@
 title: My GitHub Page
 description: A simple GitHub Pages site.
-theme: minima
+theme: jekyll-theme-slate
+
